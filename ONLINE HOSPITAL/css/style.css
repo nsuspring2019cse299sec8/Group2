@@ -53,3 +53,30 @@ body{
 }
 
 /*login page end*/
+
+
+
+/*home page start*/
+.doctors_menu{}
+.doctors_menu ul{
+    text-decoration: none;
+    list-style: none;
+}
+.doctors_menu ul li{
+    text-decoration: none;
+    padding:15px;
+}
+.doctors_menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+.doctors_menu ul li a:hover{
+    color:#396ec1;
+}
+/*home page end*/
+    
