@@ -1,85 +1,4 @@
-body{
-    background-image: url(../images/computer-desk-doctor-48604.jpg);   background-size: cover;
-    background-color: white;
-  padding: 0px;
 
-}
-
-/*login page start*/
-
-.main{
-    background-color: #563d7cbf;
-   
-}
-.welcome_text
-{
-/*       background-color: #563d7cbf;*/
-    height: 102px;
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    color: white;
-    padding: 10px 0px 10px;
-    margin: 20px 15%;
-    width: 70%;
-}
-.signup,.log_in{
-/*     background-color: #563d7cbf;*/
-    color: white;
-     font-family: 'Roboto Mono', monospace;
-    padding: 20px;
-    text-align: center;
-    
-}
-.signup_form{
-    
-}
-.signup_form input,.login_form input{
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
-    text-align: center;
-    border-radius: 8px;
-    color: #563d7cbf;
-}
-.cover_img{
-    background-color: #ffffff80;
-}
-.pro_icon{
-    padding: 20px
-}
-.doctors_menu{
-        background-color: #a5c0d3cf;
-    color: white;
-}
-
-/*login page end*/
-
-
-
-/*home page start*/
-.doctors_menu{}
-.doctors_menu ul{
-    text-decoration: none;
-    list-style: none;
-}
-.doctors_menu ul li{
-    text-decoration: none;
-    padding:15px;
-}
-.doctors_menu ul li a{
-    color: white;
-    text-decoration: none;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 600;
-    margin-right: 20px;
-    font-size: 20px;
-
-}
-.doctors_menu ul li a:hover{
-    color:#396ec1;
-}
-/*home page end*/
-    
 /*font-family: 'Lato', sans-serif;*/
 
 body{
@@ -90,18 +9,18 @@ body{
 
 
 
-/*hospital start*/
+/*courses start*/
 
-.hospital
+.courses
 {
     
 }
-.hospital_content{
+.courses_content{
  margin-top: 100px;   
     
 }
 
-.hospital_content h1{
+.courses_content h1{
 font-size: 30pt;
 font-weight: bold;
 
@@ -172,27 +91,6 @@ font-weight: bold;
 
 .card-title {
    color: #1ec0ff;
-    font-size: 24px;
-    font-weight: 600;
-
-    line-height: 1.2857em;
-}
-.card-title2 {
-   color: #56d47e;
-    font-size: 24px;
-    font-weight: 600;
-
-    line-height: 1.2857em;
-}
-.card-title3{
-   color: #f05c5c;
-    font-size: 24px;
-    font-weight: 600;
-
-    line-height: 1.2857em;
-}
-.card-title4{
-   color: #ffd338;
     font-size: 24px;
     font-weight: 600;
 
@@ -274,8 +172,22 @@ float: right;
     
 }
 /*card end*/
+.courses_footer{
+    min-height: 50px;
+    background-color: #56d47e;
+    text-align: center !important;
+    border-radius: 20px;
+    color: white;
+    font-size: 30px;
+    margin: 60px 0 100px 0;
+}
+.courses_footer i{
+    
+    margin-top: 15px;
+}
 
 
+/*courses end*/
 
-/*hospital end*/
 
+/
