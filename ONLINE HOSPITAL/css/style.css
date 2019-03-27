@@ -419,6 +419,60 @@ float: right;
 
 
 /*hospital end*/
+/*  about start*/
+    
+
+#about{
+  
+    padding: 100px;
+    
+}
+
+.common_title{
+    
+  margin-bottom: 40px;  
+}
+.common_title h1{
+    font-size: 30pt;
+    margin-bottom: 30px;
+    color: #333333;
+    font-weight: bold;
+    
+}
+.common_title hr{
+    width: 250px;
+    border: 2px dashed white;
+    
+}
+
+.about_content{
+    padding-right: 10px;
+}
+.about_content h1{
+    font-size: 24pt;
+    font-weight: bold;
+}
+.about_content hr{
+    width: 200px;
+    border: 2px dashed white;
+    margin-left: 0;
+}
+.about_content p{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: light;
+    color:#666666;
+}
+.about_content a{
+    
+}
+.about_img img{
+border-radius: 20px;    
+    
+}
+
+/*about end*/
+
 
 
 
