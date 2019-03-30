@@ -96,7 +96,9 @@
 .custom_nav{
     padding: 10px 70px;
      color: white !important;
-  
+
+    margin-left: 75px;
+
 }
 .custom_nav:hover{
      background-color: white;
