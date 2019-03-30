@@ -1,0 +1,241 @@
+<!--
+<?php
+    include "lib/connection.php";
+    $result="";
+      //insert query
+        if(isset($_POST['add_data'])){
+            $fname= $_POST['student_fname'];
+            $lname= $_POST['student_lname'];
+            $age= $_POST['student_age'];
+            $email= $_POST['student_email'];
+            $gender= $_POST['student_gender'];
+            $pass= md5($_POST['student_pass']);
+            $confirm= md5($_POST['student_confirm']);
+              
+            if($pass==$confirm){
+            
+            $insert_sql= "INSERT INTO patient_info (pfirst_name,plast_name,page,pemail,pgender,ppass) values ('$fname','$lname',$age,'$email','$gender','$pass')";
+            if (strlen($pass)<6){
+                  $result= "Password should be atleast 6 characters!";
+              } 
+                else{
+                      if($conn->query($insert_sql)){
+                $result="Successfully Submitted!";
+              }
+                      else{
+                        die($conn->error);
+                        }
+                }
+          
+           }
+           else{
+           $result= "Password didn't match!Try again";
+           }
+    }
+
+    //select query
+    
+    $select_sql="SELECT * FROM patient_info";
+    $select_query=$conn->query($select_sql);
+    
+    //echo $select_query->num_rows;
+        
+    
+?>
+-->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- MATERIAL DESIGN ICONIC FONT -->
+        <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+        <!-- STYLE CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fform.css">
+<!--
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico" />
+-->
+        <link rel="stylesheet" href="css/style.css">
+<!--
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-migrate-1.1.1.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/superfish.js"></script>
+        <script src="js/jquery.equalheights.js"></script>
+        <script src="js/jquery.mobilemenu.js"></script>
+        <script src="js/tmStickUp.js"></script>
+        <script src="js/jquery.ui.totop.js"></script>
+        <script>
+            $(window).load(function() {
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+                $('#stuck_container').tmStickUp({});
+            });
+
+        </script>
+-->
+    </head>
+
+    <body class="" id="top">
+        <!--==============================
+              header
+=================================-->
+        <header>
+            
+          <div class="container-fluid custom_top">
+        <div class="row cover_img">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="pro_icon">
+                    <img src="img/doctorologo.jpg" alt="">
+                </div>
+
+
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3">
+                  <nav class="global-header__nav global-nav visually-hidden js-global-nav" role="navigation">
+                        <ul class="global-nav_list">
+                            <li class="global-nav__item"><a class="global-nav_link" href="#" target="_top">Which hospital you are looking for?? </a></li>
+             
+                        </ul>
+                    </nav>
+
+
+            </div>
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <nav class="global-header__nav global-nav visually-hidden js-global-nav" role="navigation">
+                        <ul class="global-nav__list">
+                        
+                            <li class="global-nav__item"><a class="global-nav_link" href="#" target="_top">Which city you are from?</a></li>
+                        </ul>
+                    </nav>
+
+
+            </div>
+                 <div class="col-xs-3 col-sm-3 col-md-3">
+              
+
+
+            </div>
+
+
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom_menu">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse custom_navbar" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item custom_nav active">
+                        <a class="nav-link " href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item custom_nav">
+                        <a class="nav-link " href="Hospital.html">Doctor Profile</a>
+                    </li>
+                    <li class="nav-item custom_nav">
+                        <a class="nav-link " href="support.html">Online Support</a>
+                    </li>
+                    <li class="nav-item custom_nav">
+                        <a class="nav-link " href="Surgeon.html">Specailized Doctor</a>
+                    </li>
+                   
+                    <li class="nav-item custom_nav">
+                        <a class="nav-link " href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+</div>
+        </header>
+
+        <div class="wrapper" style="background-image: url('images/2.jpeg')" ;>
+            <div class="inner">
+                <div class="image-holder">
+                    <img src="images/1.jpeg" alt="">
+                </div>
+                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+                    <h3>Patient Sign Up Form</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="First Name" name="patient_fname" class="form-control" required>
+                        <input type="text" placeholder="last Name" name="patient_lname" class="form-control" required>
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="text" placeholder="Age" name="patient_age" class="form-control" required>
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="text" placeholder="Email Address" name="student_email" class="form-control" required>
+                        <i class="zmdi zmdi-email"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        <select name="student_gender" id="" class="form-control">
+							<option value="" disabled selected>Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+                        <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="text" placeholder="Doctor's name" name="Doctor_name" class="form-control" required>
+                        <i class="zmdi zmdi-lock"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="password" placeholder="Hospital's name" name="hospital_name" class="form-control" required>
+                        <i class="zmdi zmdi-lock"></i>
+                    </div>
+                    <button class="btm" type="Submit" value="Submit" name="add_data">Submit</button>
+                    <div class="result" style="text-align:center">
+                        <?php echo $result; ?>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+        <!--==============================
+              footer
+=================================-->
+        <footer id="footer">
+            <div class="container_12">
+                <div class="grid_12">
+                    <h1 class="logo">
+                        <a href="index.html">
+          YFB
+        </a>
+                    </h1>
+                    <div class="socials">
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-google-plus"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                    </div>
+                    <div class="sub-copy">&copy; <span id="copyright-year"></span>| <a href="#">Privacy Policy</a> <br> Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">WebSolution</a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </footer>
+        <a href="#" id="toTop" class="fa fa-angle-up"></a>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>
