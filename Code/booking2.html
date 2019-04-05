@@ -96,8 +96,8 @@
                 <div class="image-holder">
                     <img src="img/1.jpg" alt="">
                 </div>
-                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-                    <h3>Patient Sign Up Form</h3>
+                <form action="" method="post">
+                    <h3>Booking Form</h3>
                     <div class="form-group">
                         <input type="text" placeholder="First Name" name="patient_fname" class="form-control" required>
                         <input type="text" placeholder="last Name" name="patient_lname" class="form-control" required>
@@ -116,6 +116,14 @@
 							<option value="female">Female</option>
 						</select>
                         <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="text" placeholder="Hospital's name" name="Hospital_name" class="form-control" required>
+                     
+                    </div>
+                    <div class="form-wrapper">
+                        <input type="text" placeholder="doctor's name" name="doctor_name" class="form-control" required>
+                       
                     </div>
                     <div class="form-wrapper">
                         <input type="Number" placeholder="Account no" name="Account no" class="form-control" required>
