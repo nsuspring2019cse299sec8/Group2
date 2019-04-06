@@ -3,7 +3,7 @@
 $host="localhost";
 $user="root";
 $pass="";
-$db="hospital";
+$db="hospital2";
 
 $conn=new mysqli($host,$user,$pass,$db);
 
@@ -11,7 +11,7 @@ $conn=new mysqli($host,$user,$pass,$db);
         die($conn->error);
     }
     else{
-         //echo "database connected";
+         echo "database connected";
     }
     
 
