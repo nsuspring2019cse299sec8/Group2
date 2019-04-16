@@ -28,8 +28,9 @@ if(isset($_POST['add_data'])){
     
 }
 
-
-
+$select_sql="SELECT * FROM doctor";
+    $select_query=$conn->query($select_sql);
+ echo $select_query -> num_rows;
 
 
 
