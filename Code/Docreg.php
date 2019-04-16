@@ -1,3 +1,46 @@
+ 
+ <?php
+
+include "lib/connection.php";
+$result ="";
+//insert query
+if(isset($_POST['add_data'])){
+   $Name= $_POST['name'];
+   $Department= $_POST['department'];
+   $Email= $_POST['email'];
+   $Hospital_name= $_POST['hospital_name'];
+   $Details= $_POST['details'];
+    
+    
+    $insert_sql= "INSERT INTO doctor(Name,Department,Email,Hospital_name,Details) values ('$Name','$Department','$Email','$Hospital_name','$Details')";
+    
+    if($conn->query($insert_sql)){
+       $result= "Confirmed";
+        
+    }
+    
+    else{
+           die($conn->error);
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+?>
+ 
+ 
+ 
+ 
+ 
+ 
  <!DOCTYPE html>
 
 <html lang="en">
@@ -91,41 +134,42 @@
     <div class="container-contact100">
 
         <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
+            <form class="contact100-form validate-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+               
                 <span class="contact100-form-title bedonortitle">
                     Add more doctor
                 </span>
 
                 <div class="wrap-input100 validate-input" data-validate="Please enter your name">
-                    <input class="input100" type="text" name="name" placeholder="Doctor's Full Name">
+                    <input class="input100" type="text" name="name" placeholder="Doctor's Full Name" required>
                     <span class="focus-input100"></span>
                 </div>
               
 
-                <div class="wrap-input100 validate-input" data-validate="Please enter your Blood Group">
-                    <input class="input100" type="text" name="name" placeholder="Department">
+                <div class="wrap-input100 validate-input" data-validate="Please enter department ">
+                    <input class="input100" type="text" name="department" placeholder="Department" required>
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x">
-                    <input class="input100" type="text" name="email" placeholder="Email">
+                    <input class="input100" type="email" name="email" placeholder="Email" required>
                     <span class="focus-input100"></span>
                 </div>
-                
+                  <div class="wrap-input100 validate-input" data-validate="Hospital name">
+                 <input class="input100" type="text" name="hospital_name" placeholder="Hospital's Name" required>
+                    <span class="focus-input100"></span>
+                </div>
               
 
                 <div class="wrap-input100 validate-input" data-validate="Please enter your Address">
-                    <textarea class="input100" name="message" placeholder="Details"></textarea>
+                    <textarea class="input100" name="details" placeholder="Details" required></textarea>
                     <span class="focus-input100"></span>
                 </div>
-                    <div class="wrap-input100 validate-input" data-validate="Hospital name">
-                 <input class="input100" type="text" name="hospital-name" placeholder="Hospital's Name">
-                    <span class="focus-input100"></span>
-                </div>
+                  
 
 
                 <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn">
+                    <button type="submit"  name="add_data" class="contact100-form-btn">
                         <span>
                             <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
      Confirm registeration
@@ -133,8 +177,15 @@
                     </button>
                 </div>
             </form>
+            
         </div>
+        
     </div>
+    <div class="result">
+            <?php echo $result;
+            
+            ?>
+        </div>
 
     <!--    form ends   -->
 
