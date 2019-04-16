@@ -29,12 +29,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `doctor` (
-  `Id` int(11) NOT NULL,
+  `Id` int(11) PRIMARY KEY AUTO_INCREMENT,
   `Name` varchar(255) NOT NULL,
-  `Email` varchar(255) NOT NULL,
-  `Phone_Number` int(11) NOT NULL,
   `Department` varchar(255) NOT NULL,
-  `Hospital_Id` int(11) NOT NULL
+  `Email` varchar(255) NOT NULL,
+  `Hospital_name` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
