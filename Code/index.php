@@ -2,7 +2,7 @@
 
  include "lib/connection.php";
  $result ="";
- if(isset($_POST['submit'])){
+ if(isset($_POST['add_data'])){
     $first_name= $_POST['patient_first_name'];
     $last_name= $_POST['patient_last_name'];
     $gender= $_POST['patient_gender'];
@@ -13,8 +13,8 @@
     $pass= $_POST['confirm_password'];
     
 
- if($pass==$conn_pass){
-    $insert_sql = "INSERT INTO patient(first_name, last_name, gender, date_of_birth, location, email, password, pass) values('$first_name', '$last_name', '$gender', '$date_of_birth', '$location', '$email', '$password')";
+ if($password==$pass){
+    $insert_sql = "INSERT INTO patient(first_name, last_name, gender, date_of_birth, location, email, password) values('$first_name', '$last_name', $gender, '$date_of_birth', '$location', '$email', '$password')";
 
     if($conn->query($insert_sql)){
         $result = "data added";
@@ -113,7 +113,7 @@
         <br>
         <br>
         
-        <input type="button" name="submit" value="Submit">
+        <input type="submit" name="add_data" value="Sign In">
         
     </form>
     </div>
@@ -139,7 +139,7 @@
                  <br>
                  <br>
                  
-                 <input type="button" name="submit" value="Submit">
+                 <input type="submit" name="add_data" value="Log In">
             </form>
         </div>
         
