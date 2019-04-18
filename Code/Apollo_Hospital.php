@@ -28,11 +28,11 @@ if(isset($_POST['add_data'])){
     
 }
 
-$select_sql="SELECT * FROM bank_info where Hospital_name='Apollo'";
+$select_sql="SELECT * FROM doctor where Hospital_name='Apollo'";
     $select_query=$conn->query($select_sql);
    
 
-
+if ($select_query->num_rows>0){ 
 
 
 ?>
@@ -147,7 +147,10 @@ font-weight: bold;">Apollo Hospital</h1>
             </div>
             
         </div>
-        
+         <div class="row">
+                   
+              <div class="col-md-12 col-lg-12">   
+              
         <div class="row" style="margin: 40px 0px;">
             
  
@@ -527,12 +530,10 @@ Phone: +880-2-8401661, Hotline – 10678
                 
 <!--                          -->
 
-
-             <div class="col-md-6 col-lg-3">
+ <?php while($data=$select_query->fetch_assoc()){ ?>
+             <div class="col-md-3 col-lg-3">
                  <div class="card">
-                    <?php if ($select_query->num_rows>0){ ?>
-                    <?php while($data=$select_query->fetch_assoc()){ ?>
-                     <div class="card-header card_custom_header2 text-center">
+                    <div class="card-header card_custom_header2 text-center">
                      <span><?php echo $data['Department']; ?></span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
   </div>
                     <img class="card-img-top" src="img/Male_Doctor.png">
@@ -556,15 +557,15 @@ Phone: +880-2-8401661, Hotline – 10678
                        <span class="float-right rightone"></span>
                     </div>
                     <?php } ?>
-                    <?php } else{ ?>
+                    <?php } else{  } ?> 
                 </div>
-                 <?php } ?>   
+                  
             </div>
                 
           
             </div>
          
-            
+             </div></div>
         </div>
     </div>
   
