@@ -531,7 +531,7 @@ Phone: +880-2-8401661, Hotline – 10678
 <!--                          -->
 
  <?php while($data=$select_query->fetch_assoc()){ ?>
-             <div class="col-md-3 col-lg-3">
+             <div class="col-md-6 col-lg-3">
                  <div class="card">
                     <div class="card-header card_custom_header2 text-center">
                      <span><?php echo $data['Department']; ?></span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
@@ -556,11 +556,12 @@ Phone: +880-2-8401661, Hotline – 10678
                        <span><a href="booking.html">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
-                    <?php } ?>
-                    <?php } else{  } ?> 
+                    
                 </div>
                   
             </div>
+               <?php } ?>
+                    <?php } else{  } ?> 
                 
           
             </div>
