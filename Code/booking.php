@@ -12,7 +12,7 @@
     
 
 
-    $insert_sql = "INSERT INTO payment(name, age, email, ammount_payment, phone, address) values('$name', $age, $email, $ammount_payment, $phone, '$address')";
+    $insert_sql = "INSERT INTO payment(bname, bage, bemail, bamount, bphone, baddress) values('$name', $age, '$email', $ammount_payment, $phone, '$address')";
 
     if($conn->query($insert_sql)){
         $result = "data added";
