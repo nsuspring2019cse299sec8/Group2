@@ -11,7 +11,7 @@ $conn=new mysqli($host,$user,$pass,$db);
         die($conn->error);
     }
     else{
-         echo "database connected";
+//         echo "database connected";
     }
     
 

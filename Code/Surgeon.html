@@ -1,50 +1,10 @@
- 
- <?php
-
-include "lib/connection.php";
-$result ="";
-//insert query
-if(isset($_POST['add_data'])){
-   $Name= $_POST['name'];
-   $Department= $_POST['department'];
-   $Email= $_POST['email'];
-   $Hospital_name= $_POST['hospital_name'];
-   $Details= $_POST['details'];
-    
-    
-    $insert_sql= "INSERT INTO doctor(Name,Department,Email,Hospital_name,Details) values ('$Name','$Department','$Email','$Hospital_name','$Details')";
-    
-    if($conn->query($insert_sql)){
-       $result= "Confirmed";
-        
-    }
-    
-    else{
-           die($conn->error);
-    }
-    
-    
-    
-    
-}
-
-$select_sql="SELECT * FROM doctor where Hospital_name='Apollo'";
-    $select_query=$conn->query($select_sql);
-   
-
-if ($select_query->num_rows>0){ 
-
-
-?>
-
-
 <!doctype html>
 <html class="no-js" lang="">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Apollo HOSPITAL</title>
+  <title>Surgeon</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -98,7 +58,7 @@ if ($select_query->num_rows>0){
 
 
         </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light custom_menu">
+             <nav class="navbar navbar-expand-lg navbar-light bg-light custom_menu">
           
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -106,14 +66,13 @@ if ($select_query->num_rows>0){
             <div class="collapse navbar-collapse custom_navbar" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item custom_nav active">
-                        <a class="nav-link " href="home.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link " href="home.html">Home</a>
                     </li>
                     <li class="nav-item custom_nav">
                         <a class="nav-link " href="Hospital.html">Doctor Profile</a>
                     </li>
-                  
-                    <li class="nav-item custom_nav">
-                        <a class="nav-link " href="Surgeon.html">Surgeon</a>
+                   <li class="nav-item custom_nav">
+                        <a class="nav-link " href="Surgeon.html">Surgeon <span class="sr-only">(current)</span></a>
                     </li>
                    
                     <li class="nav-item custom_nav">
@@ -122,7 +81,6 @@ if ($select_query->num_rows>0){
                 </ul>
             </div>
         </nav>
-
 </div>
 
 
@@ -141,16 +99,13 @@ if ($select_query->num_rows>0){
             <div class="col-md-10 offset-md-1">
                <div class="hospial_content text-center" style="margin-top: 100px;">
                 <h1 style="font-size: 30pt;
-font-weight: bold;">Apollo Hospital</h1>
+font-weight: bold;">Surgeon</h1>
          
                 </div>
             </div>
             
         </div>
-         <div class="row">
-                   
-              <div class="col-md-12 col-lg-12">   
-              
+        
         <div class="row" style="margin: 40px 0px;">
             
  
@@ -160,20 +115,59 @@ font-weight: bold;">Apollo Hospital</h1>
                  <div class="col-md-6 col-lg-3">
                  <div class="card">
                      <div class="card-header card_custom_header2 text-center">
-                     <span>General & Laparoscopic Surgeon</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+                     <span>Vascular Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
   </div>
                     <img class="card-img-top" src="img/Male_Doctor.png">
                     <div class="card-block">
                         <figure class="profile">
                             <img src="img/price2.png" class="profile-avatar" alt="">
                         </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Dr. Anisur Rahman</h4>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. SMG Saklayen</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">Birdem Hospital</h4>
                        
                         <div class="card-text text-center">
-                          MBBS (DMC), M.Sc (Canada), FCPS (Surgery), FRCS (Glasgow, UK)
-                            Visiting Hours:
-Location: Plot # 81, Block # E, Basudhara R/A, Dhaka – 1229
-Phone: +880-2-8401661, 8845242, 01729-276556 Cell: +880 1841276556, Hotline: 10678
+                          MBBS, Master of Surgery
+Head of the Department 
+email: saklayendmc@gmail.com
+SPECIALITY:   Cardiovascular and Thoracic Surgery
+
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+                     <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Cardiac Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Dr. M. H. Millat</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">Birdem Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                          MBBS, FRCS (Edin)
+Senior Consultant
+email: mhmillat@ibrahimcardiac.org.bd
 
 
                         </div>
@@ -182,7 +176,7 @@ Phone: +880-2-8401661, 8845242, 01729-276556 Cell: +880 1841276556, Hotline: 106
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="#">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -190,143 +184,6 @@ Phone: +880-2-8401661, 8845242, 01729-276556 Cell: +880 1841276556, Hotline: 106
                 
 <!--                          -->
             
-               <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>Kidney ( Nephrology )</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Male_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Krishna Mohan Sahu</h4>
-                       
-                        <div class="card-text text-center">
-                            MBBS, MD (Med.), DNB (Nephrology), DM (Nephrology), Fellowship (Nephrology) Canada
-                         Visiting Hours:
-Location: Plot # 81, Block # E, Basudhara R/A, Dhaka – 1229
-Phone: +880-2-8401661, 8845242,  01729-276556 Cell: +880 1841276556, Hotline: 10678
-
-
-
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-                     <span><a href="booking.html">Book Now</a></span>
-                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
-            
-            <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>Burn & Plastic Surgeon</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Male_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. A.K.M Fazlul Haque</h4>
-                       
-                        <div class="card-text text-center">
-                            MBBS, FRCS (UK)
-                        Visiting Hours:
-Location: Plot # 81, Block # E, Bashundhara R/A, Dhaka – 1229, Bangladesh
-Phone: +880-2-8401661, Hotline – 10678, 01729-276556
-
-
-
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
-                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
-            
-            <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>Diabetes & Endocrine</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Male_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Abdul Mannan Sarker</h4>
-                       
-                        <div class="card-text text-center">
-                        MBBS, DEM (DU), MD (Endocrinology)
-                        Visiting Hours:
-Location: Plot # 81, Block # E, Basudhara R/A, Dhaka – 1229
-Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
-    
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
-                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
-            
-            
-               <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>Internal Medicine</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Male_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Abdullah Al Mamun</h4>
-                       
-                        <div class="card-text text-center">
-                       MBBS, FCPS (Medicine), MACP ( USA ), FACP
-                       Visiting Hours:
-Location: Plot # 81, Block # E, Basudhara R/A, Dhaka – 1229
-Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678,  01729-276556 
-     
-
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>       
-                         <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
             
               <!--                       -->  
             
@@ -334,33 +191,34 @@ Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678,  01729-27
                  <div class="col-md-6 col-lg-3">
                  <div class="card">
                      <div class="card-header card_custom_header2 text-center">
-                     <span>Child – Pediatric</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+                     <span>Cardiac Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
   </div>
                     <img class="card-img-top" src="img/Male_Doctor.png">
                     <div class="card-block">
                         <figure class="profile">
                             <img src="img/price2.png" class="profile-avatar" alt="">
                         </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Abu Sayeed Mohammad Iqbal</h4>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Lutfor Rahman</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">LabAid Hospital</h4>
                        
                         <div class="card-text text-center">
-                        MBBS, FCPS, MD, Fellow (Singapore), Neonatal Training in Singapore & Australia
-Coordinator & Senior Consultant
-Visiting Hours:
-Location: Plot # 81, Block # E, Bashundhara R/A, Dhaka – 1229, Bangladesh
-Phone: +880-2-8401661, Hotline – 10678
+                          MBBS, MS (CTS)
 
- 
                         </div>
+                   <br><br>
+                          
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
                 
 <!--                          -->
+            
             
             <!--                       -->  
             
@@ -368,205 +226,400 @@ Phone: +880-2-8401661, Hotline – 10678
                  <div class="col-md-6 col-lg-3">
                  <div class="card">
                      <div class="card-header card_custom_header2 text-center">
-                     <span>Neuromedicine</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+                     <span>Head & Neck Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
   </div>
                     <img class="card-img-top" src="img/Male_Doctor.png">
                     <div class="card-block">
                         <figure class="profile">
                             <img src="img/price2.png" class="profile-avatar" alt="">
                         </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Alim Akther Bhuiyan</h4>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. M Muinul Hafiz</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">LabAid Hospital</h4>
                        
                         <div class="card-text text-center">
-                      MBBS, DTM&H (UK), MD (USA), Post Doctoral Fellowship in Epilepsy and Clinical Neurophysiology (USA), US Board Certified in Neurology
-Coordinator & Consultant
-Visiting Hours:
-Location: Plot # 81, Block # E, Bashundhara R/A, Dhaka – 1229, Bangladesh
-Phone: +880-2-8401661, Hotline – 10678
+                          MBBS, DAND, DLO, MS (ENT), FACS(USA), FICS
 
- 
                         </div>
+                   <br><br>
+                          
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
-            
-             <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>ENT-Ear, Nose & Throat</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Male_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">.Dr. Arun Dodhu Patole</h4>
-                       
-                        <div class="card-text text-center">
-                     MBBS, MS, DORL (Mumbai), Fellow A.I.N.OT (Italy)
-                            Visiting Hours:
-Location: Plot # 81, Block # E, Basundhara R/A, Dhaka – 1229
-Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
-
- 
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
-            
-                         <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>Urology</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Female_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Azfar Uddin Shaikh</h4>
-                       
-                        <div class="card-text text-center">
-                      MBBS. MS (DMC), MS (Urology), FSUA (Singapore)
-                        Visiting Hours:
-Location: Plot # 81, Block # E, Basundhara R/A, Dhaka – 1229
-Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
-
- 
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
-            
-                <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>Rheumatology</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Male_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Abdullah Al Mamun</h4>
-                       
-                        <div class="card-text text-center">
-                     MBBS, FCPS (Medicine), MACP ( USA ), FACP
-                       Visiting Hours:
-Location: Plot # 81, Block # E, Basundhara R/A, Dhaka – 1229
-Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
-     
- 
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-                
-<!--                          -->
-            
-            
-             <!--                       -->  
-            
-            
-                 <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                     <div class="card-header card_custom_header2 text-center">
-                     <span>Gynecology & Obstetrics</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Female_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Gulshan Ara</h4>
-                       
-                        <div class="card-text text-center">
-                    MBBS, MCPS, MS (Obs./Gynae.), FCPS, Trained in Advanced Laparoscopic Surgery (India)
-                    Visiting Hours:
-Location: Plot # 81, Block # E, Bashundhara R/A, Dhaka – 1229, Bangladesh
-Phone: +880-2-8401661, Hotline – 10678
-
- 
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
-                    </div>
-                </div>
-            </div>
-               
-                
-<!--                          -->
-
- <?php while($data=$select_query->fetch_assoc()){ ?>
-             <div class="col-md-6 col-lg-3">
-                 <div class="card">
-                    <div class="card-header card_custom_header2 text-center">
-                     <span><?php echo $data['Department']; ?></span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
-                    <img class="card-img-top" src="img/Male_Doctor.png">
-                    <div class="card-block">
-                        <figure class="profile">
-                            <img src="img/price2.png" class="profile-avatar" alt="">
-                        </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;"><?php echo $data['Name']; ?></h4>
-                       
-                        <div class="card-text text-center">
-                      <?php echo $data['Email']; ?>
-                        </div>
-                         <div class="card-text text-center">
-                  <?php echo $data['Details']; ?>
-                        </div>
-                    </div>
-                    <div class="card-footer text-center">
-                       <span class="float-left leftone"></span>
-                       
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="#">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
-                    
                 </div>
-                  
             </div>
-               <?php } ?>
-                    <?php } else{  } ?> 
                 
+<!--                          -->
+            
+            
+            <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Neuro Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">DR. SAUMITRA SARKER</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">Popular Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                         MBBS, MS (NEUROSURGERY), FELLOW IN NEUROENDOSCOPY (INDIA), ADVANCED NEUROSURGUCAL TRAINING (JAPAN)
+                        Visiting Hour : 6 PM-8 PM, Closed : THURSDAY,FRIDAY & SATURDAY
+
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+             <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Orthopaedic Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">PROF. DR. MUHAMMAD SHAHIDUZZAMAN</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">Popular Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                        MBBS, MS(ORTHO), RCO(USA)
+                            Professor and Head,Departmnet of Orthopaedic Surgery(Rtd),Dhaka Medical College & Hospital
+                            Visiting Hour: 11AM-1PM, Closed: FRIDAY
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+            <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Pediatric Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Ahmed Zahid Hossain</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">Square Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                        Qualification: MBBS, MS ( Ped. Surgery )
+
+Designation: Associate Consultant
+
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+             <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Plastic Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Md. Abdul Mabin</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">United Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                       MBBS, (DMC), DSS (Univ of Vienna), Fellow in Specialized Surgery (Plastic & Reconstructive)
+                       Emergency Call: 10666, +880 1914 001234
+
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+            <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>General Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Abu Sayeed M.M. Rahman</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">United Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                      MBBS, FRCS (Edin), FRCS (Glasg)
+                      Emergency Call: 10666, +880 1914 001234
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+
+            
+             <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Orthopaedic Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Aminul Hassan</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">United Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                     MBBS, D.Orth, MS (Orth), FACS
+                      Emergency Call: 10666, +880 1914 001234
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+             <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>General & Laparoscopic  Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Dr. Anisur Rahman</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">United Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                    MBBS (DMC), MSc (Canada), FCPS (Surgery), FRCS (Glasgow, UK)
+                      Emergency Call: 10666, +880 1914 001234
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+
+            
+             <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Cardiac Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. Jahangir Kabir</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">United Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                   MBBS, MS (CTS)
+                   Chief Cardiac Surgeon & Director – Cardiac Centre
+
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+             <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>General & Laparoscopic Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Dr. Anisur Rahman</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">Apollo Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                  MBBS (DMC), M.Sc (Canada), FCPS (Surgery), FRCS (Glasgow, UK)
+
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+            
+            
+             <!--                       -->  
+            
+            
+                 <div class="col-md-6 col-lg-3">
+                 <div class="card">
+                     <div class="card-header card_custom_header2 text-center">
+                     <span>Burn & Plastic Surgery</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
+  </div>
+                    <img class="card-img-top" src="img/Male_Doctor.png">
+                    <div class="card-block">
+                        <figure class="profile">
+                            <img src="img/price2.png" class="profile-avatar" alt="">
+                        </figure>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Dr. A.K.M Fazlul Haque</h4>
+                        
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #f05c5c !important;">Apollo Hospital</h4>
+                       
+                        <div class="card-text text-center">
+                  MBBS, FRCS (UK)
+                  Coordinator & Consultant
+
+
+                        </div>
+                   <br><br>
+                          
+                    </div>
+                    <div class="card-footer text-center">
+                       <span class="float-left leftone"></span>
+                       <span><a href="#">Book Now</a></span>
+                       <span class="float-right rightone"></span>
+                    </div>
+                </div>
+            </div>
+                
+<!--                          -->
+
+
+            
+
+
           
             </div>
          
-             </div></div>
+            
         </div>
     </div>
   
