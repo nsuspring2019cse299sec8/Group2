@@ -450,7 +450,7 @@ Professor & Sr. Consultant
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
                        
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                     
