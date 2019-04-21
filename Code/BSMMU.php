@@ -134,7 +134,7 @@ font-weight: bold;">BSMMU Hospital</h1>
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ font-weight: bold;">BSMMU Hospital</h1>
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -195,7 +195,7 @@ font-weight: bold;">BSMMU Hospital</h1>
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -226,7 +226,7 @@ font-weight: bold;">BSMMU Hospital</h1>
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="#">Book Now</a></span>
+                        <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -260,7 +260,7 @@ Prof. Mohammad Abdur Rahim Miah
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="#">Book Now</a></span>
+                      <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -289,7 +289,7 @@ Prof. Mohammad Abdur Rahim Miah
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="#">Book Now</a></span>
+                        <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -319,7 +319,7 @@ Prof. Mohammad Abdur Rahim Miah
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="#">Book Now</a></span>
+                        <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -350,7 +350,7 @@ Prof. Mohammad Abdur Rahim Miah
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -380,7 +380,7 @@ Prof. Mohammad Abdur Rahim Miah
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -410,7 +410,7 @@ Prof. Mohammad Abdur Rahim Miah
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -444,7 +444,7 @@ Prof. Mohammad Abdur Rahim Miah
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
                        
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                     
