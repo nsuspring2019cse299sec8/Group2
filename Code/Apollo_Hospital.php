@@ -1,4 +1,4 @@
- 
+﻿ 
  <?php
 
 include "lib/connection.php";
@@ -182,7 +182,7 @@ Phone: +880-2-8401661, 8845242, 01729-276556 Cell: +880 1841276556, Hotline: 106
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -217,7 +217,7 @@ Phone: +880-2-8401661, 8845242,  01729-276556 Cell: +880 1841276556, Hotline: 10
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                     <span><a href="booking.html">Book Now</a></span>
+                     <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -252,7 +252,7 @@ Phone: +880-2-8401661, Hotline – 10678, 01729-276556
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -285,7 +285,7 @@ Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -320,7 +320,7 @@ Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678,  01729-27
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>       
+                        <span><a href="booking.php">Book Now</a></span>       
                          <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -355,7 +355,7 @@ Phone: +880-2-8401661, Hotline – 10678
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+			<span><a href="booking.php">Book Now</a></span>                       						<span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
@@ -389,7 +389,7 @@ Phone: +880-2-8401661, Hotline – 10678
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+			<span><a href="booking.php">Book Now</a></span>                       								<span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
@@ -422,7 +422,7 @@ Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+			<span><a href="booking.php">Book Now</a></span>                      								 <span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
@@ -455,7 +455,7 @@ Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+			<span><a href="booking.php">Book Now</a></span>                       							<span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
@@ -488,7 +488,7 @@ Phone: +880-2-8401661, 8845242, Cell: +880 1841276556, Hotline: 10678
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+			<span><a href="booking.php">Book Now</a></span>                       							<span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
@@ -522,7 +522,7 @@ Phone: +880-2-8401661, Hotline – 10678
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+			<span><a href="booking.php">Book Now</a></span>                       								<span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
@@ -553,7 +553,7 @@ Phone: +880-2-8401661, Hotline – 10678
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
                        
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                     <?php } ?>
