@@ -180,7 +180,7 @@ SPECIALITY:   Cardiovascular and Thoracic Surgery
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-<span><a href="booking.html">Book Now</a></span>                       <span class="float-right rightone"></span>
+                     <span><a href="booking.php">Book Now</a></span>                       								<span class="float-right rightone"></span>
                     </div>
                 </div>
             </div>
@@ -200,12 +200,12 @@ SPECIALITY:   Cardiovascular and Thoracic Surgery
                         <figure class="profile">
                             <img src="img/price2.png" class="profile-avatar" alt="">
                         </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Lt. Col. (Retd) Dr. Md. Hamidur Rahman</h4>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Lt. Col. 			(Retd) Dr. Md. Hamidur Rahman</h4>
                        
                         <div class="card-text text-center">
                            MBBS, FCPS
-Head of the Department & Senior Consultant
-email:  hamid@ibrahimcardiac.org.bd
+			Head of the Department & Senior Consultant
+				email:  hamid@ibrahimcardiac.org.bd
 
 
 
@@ -213,7 +213,7 @@ email:  hamid@ibrahimcardiac.org.bd
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -227,14 +227,14 @@ email:  hamid@ibrahimcardiac.org.bd
                  <div class="col-md-6 col-lg-3">
                  <div class="card">
                      <div class="card-header card_custom_header2 text-center">
-                     <span>Cardiology</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" alt="card_logo"> </span>
-  </div>
+                     <span>Cardiology</span><span class="card_img"> <img src="img/card_logo1.png" class="imh-fluid" 			alt="card_logo"> </span>
+  		</div>
                     <img class="card-img-top" src="img/Male_Doctor.png">
                     <div class="card-block">
                         <figure class="profile">
                             <img src="img/price2.png" class="profile-avatar" alt="">
                         </figure>
-                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Dr. Mohammad Liaquat Ali</h4>
+                        <h4 class="card-title2 text-center mt-3 custom_last" style="color: #56d47e !important;">Prof. Dr. 			Mohammad Liaquat Ali</h4>
                        
                         <div class="card-text text-center">
                            MBBS, FCPS, MRCP (UK)
@@ -247,7 +247,7 @@ SPECIALITY:   Interventional Cardiology
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -280,7 +280,7 @@ email: haq@ibrahimcardiac.org.bd
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="#">Book Now</a></span>
+                        <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -317,7 +317,7 @@ email: siraj@ibrahimcardiac.org.bd
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="#">Book Now</a></span>
+                      <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -351,7 +351,7 @@ SPECAILTY: Cardiothoracic Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="#">Book Now</a></span>
+                        <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -385,7 +385,7 @@ email: reza@ibrahimcardiac.org.bd
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="#">Book Now</a></span>
+                        <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -417,7 +417,7 @@ Professor & Sr. Consultant
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="#">Book Now</a></span>
+                       <span><a href="Booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
