@@ -136,7 +136,7 @@ font-weight: bold;">LabAid Hospital</h1>
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                     <span><a href="booking.html">Book Now</a></span>
+                     <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ font-weight: bold;">LabAid Hospital</h1>
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -197,7 +197,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -227,7 +227,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -256,7 +256,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>
+                        <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -286,7 +286,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="booking.html">Book Now</a></span>
+                      <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -316,7 +316,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>
+                        <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -345,7 +345,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>
+                        <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -374,7 +374,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -403,7 +403,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -432,7 +432,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -462,7 +462,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -492,7 +492,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="booking.html">Book Now</a></span>
+                      <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -522,7 +522,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -552,7 +552,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>
+                        <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -582,7 +582,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>
+                        <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -611,7 +611,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                    <span><a href="booking.html">Book Now</a></span>
+                    <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -641,7 +641,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -671,7 +671,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -701,7 +701,7 @@ Clinical Fellow-Rheumatology &nbsp; Immunology.
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -733,7 +733,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                        <span><a href="booking.html">Book Now</a></span>
+                        <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -763,7 +763,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="booking.html">Book Now</a></span>
+                      <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -793,7 +793,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="booking.html">Book Now</a></span>
+                      <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -822,7 +822,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -851,7 +851,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -881,7 +881,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="booking.html">Book Now</a></span>
+                      <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -910,7 +910,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                       <span><a href="booking.html">Book Now</a></span>
+                       <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
@@ -940,7 +940,7 @@ Specialty: Head & Neck Surgeon
                     </div>
                     <div class="card-footer text-center">
                        <span class="float-left leftone"></span>
-                      <span><a href="booking.html">Book Now</a></span>
+                      <span><a href="booking.php">Book Now</a></span>
                        <span class="float-right rightone"></span>
                     </div>
                 </div>
