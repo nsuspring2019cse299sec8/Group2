@@ -73,21 +73,11 @@ if ($select_query->num_rows>0){
 
 
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-3">
+               <div class="col-xs-3 col-sm-3 col-md-3">
                   <nav class="global-header__nav global-nav visually-hidden js-global-nav" role="navigation">
                         <ul class="global-nav_list">
-                            <li class="global-nav__item"><a class="global-nav_link" href="#" target="_top">Which hospital you are looking for?? </a></li>
+                            <li class="global-nav__item"><a class="global-nav_link" href="Hospital.html" target="_top">Which hospital you are looking for?? </a></li>
              
-                        </ul>
-                    </nav>
-
-
-            </div>
-                <div class="col-xs-3 col-sm-3 col-md-3">
-                  <nav class="global-header__nav global-nav visually-hidden js-global-nav" role="navigation">
-                        <ul class="global-nav__list">
-                        
-                            <li class="global-nav__item"><a class="global-nav_link" href="#" target="_top">Which city you are from?</a></li>
                         </ul>
                     </nav>
 
