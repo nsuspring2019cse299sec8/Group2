@@ -3,7 +3,7 @@
 $host="localhost";
 $user="root";
 $pass="";
-$db="hospital2";
+$db="hospital_db";
 
 $conn=new mysqli($host,$user,$pass,$db);
 
